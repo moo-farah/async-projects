@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Async Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <div id="container">
-        <h2>Chunk Norris API</h2>
+    <div class="p-10 mt-10 text-center"  id="container">
+        <h2 class="text-5xl mb-5 text-red-600 font-medium">Generate Jokes!</h2>
         <div class="joke-container">
-            <p id="loadingJoke">Press 'Load Another' for Joke..</p>
+            <p class="text-sm" id="loadingJoke">Press <span class="text-green-900 font-bold">Load Another</span> for Joke..</p>
         </div>
-        <button id="loadJokeBtn">Load Another</button>
+        <button class="px-2 py-2 rounded-sm mt-10  bg-red-500 text-white" id="loadJokeBtn">Load Another</button>
     </div>
     <script src="async.js"></script>
 </body>
